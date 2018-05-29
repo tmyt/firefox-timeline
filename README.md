@@ -1,4 +1,4 @@
-# Chrome Timeline
+# Firefox Timeline
 
-Enlabel Windows Timeline activity tracking in Chrome.
+Enlabel Windows Timeline activity tracking in Firefox.
 

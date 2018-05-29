@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Chrome Timeline",
+  "name": "Firefox Timeline",
   "version": "1.2",
   "content_scripts": [
     {
@@ -10,8 +10,7 @@
     }
   ],
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "scripts": ["background.js"]
   },
   "permissions": [
     "identity",
@@ -21,5 +20,10 @@
   ],
   "options_ui": {
     "page": "options/index.html"
+  },
+  "applications": {
+    "gecko": {
+      "id": "{a620230d-61a9-4a59-b656-94415f5cd506}"
+    }
   }
 }

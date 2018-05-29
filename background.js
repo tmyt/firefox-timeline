@@ -1,7 +1,7 @@
 const AuthorizeUrl = 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize'
     , RedirectUrl = chrome.identity.getRedirectURL()
-    , ClientId = '02a9023b-5630-4e88-83cc-bcd7629c6cf6'
-    , ClientSecret = 'csbRA707*wkxpTXNAQ55:?$'
+    , ClientId = 'de413af1-cda6-4ec2-a1a1-b9037d5f4f81'
+    , ClientSecret = 'tcobSXZZ8813+|!)gqvQWP7'
     , Scope = 'UserActivity.ReadWrite.CreatedByApp offline_access';
 
 const data = {
@@ -90,7 +90,7 @@ function makeActivity(activity){
     "appActivityId": activity.id,
     "activitySourceHost": activity.host,
     "userTimezone": "America/Los Angeles",
-    "appDisplayName": "Chrome",
+    "appDisplayName": "Firefox",
     "activationUrl": uri,
     "fallbackUrl": uri,
     "contentInfo": {
@@ -101,12 +101,12 @@ function makeActivity(activity){
     },
     "visualElements": {
         "attribution": {
-            "iconUrl": activity.icon || "https://www.google.com/images/icons/product/chrome-32.png",
+            "iconUrl": activity.icon || "https://www.mozilla.org//media/img/firefox/favicon-196.c6d9abffb769.png",
             "alternateText": activity.title || activity.uri,
             "addImageQuery": "false",
         },
         "description": activity.description || "",
-        "backgroundColor": "#4F8CF5",
+        "backgroundColor": "#cc0d65",
         "displayText": activity.title || activity.uri,
         "content": {
             "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
